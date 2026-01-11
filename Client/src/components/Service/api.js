@@ -1,5 +1,5 @@
 import axios from 'axios';
-const URL ='https://handtohelp-server.onrender.com';
+const URL ='https://handtohelpserver.onrender.com';
 //register
 export const addUser= async(data)=>{
     try{
