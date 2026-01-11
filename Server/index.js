@@ -15,6 +15,10 @@ app.use(cors()); //cors use
 app.use(bodyParser.json({extended :true}));
 app.use(bodyParser.urlencoded({extended :true}));
 
+app.get('/', (req, res) => {
+  res.send('Server is running');
+});
+
 app.use('/api/auth', require('./routes/auth'));
 app.use ('/uploade', express.static('uploads'));
 app.use('/api/buisnessProvider', require('./routes/buisnessProvider'));
